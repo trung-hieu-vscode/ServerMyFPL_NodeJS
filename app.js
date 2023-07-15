@@ -9,8 +9,6 @@ let usersRouter = require('./routes/users');
 // session,cookies
 const session = require('express-session');
 const mongoose = require('mongoose');
-// import cac model
-require('./components/Category/CategoryModel');
 
 // API
 let UserAPIRouter = require('./routes/api/UserAPI')
