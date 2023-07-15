@@ -1,0 +1,11 @@
+# Bỏ qua các file log
+*.log
+
+# Bỏ qua thư mục node_modules
+node_modules/
+
+# Bỏ qua file cấu hình
+config.js
+
+# Bỏ qua file tạm thời
+*.tmp
