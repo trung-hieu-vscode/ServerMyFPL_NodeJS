@@ -1,4 +1,4 @@
-const UserService = require('./Userservice');
+const UserService = require('./UserService');
 const UserModel = require('./UserModel')
 const mailer = require('nodemailer')
 

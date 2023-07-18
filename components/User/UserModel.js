@@ -13,21 +13,23 @@ const userSchema = new Schema({
   id: { type: ObjectId },
   name: { type: String, },
   email: { type: String, default: "", unique: true },
-  description:{type:String},
   password: { type: String, required: true },
+
+  studentCode: { type: String, unique: true },
+  class: { type: String },
 
   gender: { type: Boolean, default: true },//true female false male
   dob: { type: Date, default: Date.now },
   avatar: { type: String, default: "" },
   createAt: { type: Date, default: Date.now },
-  updateAt:{ type: Date, default: Date.now },
+  updateAt: { type: Date, default: Date.now },
 
   role: { type: Number, default: 1 },
-  isLogin:{type:Boolean,default:false},
-  isActive:{type:Boolean,default:true},
-  // isVerified: { type: Boolean , default: false},
+  isLogin: { type: Boolean, default: false },
+  isActive: { type: Boolean, default: true },
+  isVerified: { type: Boolean, default: false },
   // verificationCode: { type: String },
- 
+
 });
 
 module.exports = mongoose.models.user || mongoose.model('User', userSchema);

@@ -41,8 +41,6 @@ router.post('/loginGoogle', async (req, res, next) => {
         return res.status(500).json({ result: false, message: 'Error System' })
     }
 });
-
-
 //http://localhost:3000/user/api/register
 router.post('/register', [], async (req, res, next) => {
     try {
@@ -63,7 +61,6 @@ router.post('/register', [], async (req, res, next) => {
         return res.status(500).json({ result: false, user: null })
     }
 })
-
 // http://localhost:3001/user/api/get-by-id/
 router.get('/get-by-id/', async (req, res, next) => {
     try {
@@ -78,7 +75,6 @@ router.get('/get-by-id/', async (req, res, next) => {
         return res.status(500).json({ result: false, product: null });
     }
 });
-
 //http://localhost:3000/user/api/update
 router.put('/update', async (req, res, next) => {
     try {
@@ -203,7 +199,6 @@ router.put('/change-forgot-password', [], async (req, res, next) => {
         res.status(500).json({ message: 'Lỗi máy chủ' });
     }
 });
-
 // for forgot password
 //http://localhost:3000/user/api/send-verification-code
 router.post('/send-verification-code', async (req, res) => {
@@ -273,7 +268,6 @@ router.post('/verify-email-new', async (req, res) => {
         return res.status(500).json({ result: false, massage: "ERROR Verify" })//app
     }
 });
-
 //http://localhost:3000/user/api/disable
 router.put('/disable', async (req, res, next) => {
 
@@ -317,7 +311,6 @@ router.post('/login2', async (req, res, next) => {
             .json({ result: false, message: 'Error System' })
     }
 })
-
 //http://localhost:3000/user/api/logout
 router.put('/logout', async (req, res, next) => {
     try {
